@@ -1,0 +1,11 @@
+import turtle as t
+t.bgcolor("black")
+t.speed(0)
+n=6
+colors=["red","yellow","blue","orange","green","purple"]
+
+for x in range(260):
+    t.pencolor(colors[x%6])
+    t.fd(x*3/n+x)
+    t.left(360/n+1)
+    t.width(x*n/200)
